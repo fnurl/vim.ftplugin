@@ -11,5 +11,6 @@ define(function(require, exports, module) {
 
     Extensions.addInit(function (editor) {
         editor.cm().setOption('vimMode', true);
+        editor.cm().setOption('cursorBlinkRate', 0);
     }, Extensions.PriorityLast);
 });
